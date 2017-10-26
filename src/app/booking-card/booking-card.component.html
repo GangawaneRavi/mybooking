@@ -1,0 +1,59 @@
+<div class="container booking-form-container   mx-auto">
+  <!--Card-->
+  <div class="card booking-card col-lg-4 mt-4 pt-2">
+
+
+
+    <!--Card content-->
+    <div class="card-body">
+      <!--Title-->
+      <h2>Find A
+        <span>Booking</span>
+      </h2>
+      <!--Text-->
+      <!--Register form-->
+      <form>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control pl-4" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d1="ngbDatepicker"
+              (click)="d1.toggle()">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control pl-4" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker"
+              (click)="d2.toggle()">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="number" class="form-control pl-4" placeholder="Hours">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="input-group">
+            <input type="number" class="form-control pl-4" placeholder="Members">
+          </div>
+        </div>
+
+
+
+        <div class="text-center">
+          <button class="btn  btn-default waves-light w-100 m-0" mdbRippleRadius>Check Availability</button>
+        </div>
+
+      </form>
+      <div></div>
+      <!--/Register form-->
+
+    </div>
+
+  </div>
+  <!--/.Card-->
+
+</div>

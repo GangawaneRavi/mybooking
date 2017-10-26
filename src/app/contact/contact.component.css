@@ -1,0 +1,84 @@
+.form-header {
+  color: #fff;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 2px;
+}
+.card .card-body h3 {
+  margin-bottom: 0;
+  padding: .7rem;
+}
+.btn-floating {
+  z-index: 1;
+  overflow: hidden;
+  width: 47px;
+  height: 47px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #a6c;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.btn-floating.btn-sm,
+.btn-floating.btn-small,
+.btn-floating.wishlist {
+  width: 36.15px;
+  height: 36.15px;
+}
+.blue.accent-1 {
+  background-color: #82B1FF!important;
+}
+.btn-floating {
+  position: relative;
+  margin: 10px;
+}
+.btn-floating,
+.btn-floating.btn-flat.active,
+.btn:active,
+.btn:focus,
+.btn:hover,
+.card.card-cascade.card-avatar img,
+.card.card-cascade.wider.reverse .card-body,
+.colorful-select .dropdown-content li.active span,
+.comments-list .badge,
+.dropdown .dropdown-menu .dropdown-item:active,
+.dropdown .dropdown-menu .dropdown-item:hover,
+.form-header,
+.md-pills .nav-link.active:hover,
+.media .media-left img,
+.modal-dialog .modal-content,
+.modal-dialog.cascading-modal .modal-header,
+.nav-tabs,
+.picker__box .picker__table .picker--focused,
+.picker__box .picker__table .picker__day--selected,
+.picker__box .picker__table .picker__day--selected:hover,
+.pricing-card .header,
+.reply-form .badge,
+.z-depth-1-half,
+ul.instagram-photos li img {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.btn-floating.btn-small i,
+.btn-floating.wishlist i {
+  font-size: .96154rem;
+  line-height: 36.15px;
+}
+.btn-floating i {
+  width: inherit;
+  font-size: 1.25rem;
+  line-height: 47px;
+  text-align: center;
+}
+.btn-floating i {
+  display: inline-block;
+  color: #fff;
+}
+.md-form .prefix {
+  transition: color 0.2s;
+  position: absolute;
+  width: 3rem;
+  font-size: 1.5rem;
+}

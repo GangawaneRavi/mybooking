@@ -1,0 +1,30 @@
+mdb-navbar /deep/ .nav-bg {
+    background: rgba(226, 149, 62, 0.4);
+    /* background: rgba(255, 255, 255, 0.4); */
+    color: #000000
+}
+
+mdb-navbar /deep/ .top-nav-collapse {
+    background: rgba(226, 149, 62, 1.4);
+}
+
+mdb-navbar /deep/ .top-nav-collapse .btn-default {
+    color: #FFFFFF;
+    background-color: #33b5e5 !important;
+    border-color: #C5A46D;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #C5A46D !important;
+    border-color: #C5A46D;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    color: #FFFFFF;
+    background-color: #C5A46D !important;
+    border-color: #C5A46D;
+}

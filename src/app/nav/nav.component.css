@@ -1,0 +1,9 @@
+ a {
+     color: #ffffff;
+     margin: 0 10px;
+ }
+
+ .nav-bg {
+     background: rgba(226, 149, 62, 0.4);
+     /* background: rgba(255, 255, 255, 0.8); */
+ }

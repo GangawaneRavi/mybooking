@@ -1,0 +1,65 @@
+.booking-form-container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.booking-card {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 15px;
+    top: 54%;
+    text-align: center;
+    color: #333333;
+    width: 380px;
+    height: auto;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -webkit-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+    padding: 20px;
+}
+
+h2 {
+    color: #C5A46D;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 20px 0 20px;
+}
+
+h2 span {
+    font-weight: bold;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #C5A46D;
+    border-color: #C5A46D;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    color: #FFFFFF;
+    background-color: #C5A46D !important;
+    border-color: #C5A46D;
+}
+
+.booking-card input {
+    border: 1px solid #aaaaaa
+}

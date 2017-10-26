@@ -1,0 +1,41 @@
+.section.team-section .avatar .rounded-circle {
+    max-width: 170px;
+}
+
+.icons-sm {
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.fb-ic {
+    color: #3B5998!important;
+}
+
+.tw-ic {
+    color: #55ACEE!important;
+}
+
+.ins-ic {
+    color: #2E5E86!important;
+}
+
+.li-ic {
+    color: #0082CA!important;
+}
+
+.gplus-ic {
+    color: #DD4B39!important;
+}
+
+.dribbble-ic {
+    color: #EC4A89!important;
+}
+
+.email-ic {
+    color: #4B515D!important;
+}
+
+.git-ic {
+    color: #333!important;
+}

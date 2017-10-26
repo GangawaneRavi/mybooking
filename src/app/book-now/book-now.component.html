@@ -1,0 +1,687 @@
+<div class="container mt-5" id="booking">
+  <div class="heading-box">
+    <h2>Book
+      <span>Now</span>
+    </h2>
+    <!-- Title -->
+    <div class="subtitle">Our Best Staff And Our Best services</div>
+    <!-- Subtitle -->
+  </div>
+
+  <section>
+    <ngb-tabset>
+      <ngb-tab>
+
+        <ng-template ngbTabTitle>
+          <span class="number">1</span>
+          <!-- Tab number -->
+          <span class="title">Choose
+            <b>Date</b>
+          </span>
+          <!-- Tab title -->
+        </ng-template>
+        <ng-template ngbTabContent>
+
+          <div class="container fadeInUp mb-5">
+            <div class="row">
+              <div class="col-lg-4">
+                <h4>
+                  <b>In</b> Date
+                </h4>
+                <div class="datectn text-center mx-auto">
+                  <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+                </div>
+
+
+              </div>
+              <div class="col-lg-4">
+                <h4>
+                  <b>Out </b> Date
+                </h4>
+                <div class="datectn text-center mx-auto">
+                  <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h4>
+                  <b>More</b> Details
+                </h4>
+                <div class="moreD text-center mx-a uto">
+                  <form>
+
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="number" class="form-control pl-4" placeholder="Hours">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="number" class="form-control pl-4" placeholder="Members">
+                      </div>
+                    </div>
+
+
+
+                    <div class="text-center">
+                      <button class="btn  btn-default waves-light w-100 m-0" mdbRippleRadius>Check Availability</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </ng-template>
+      </ngb-tab>
+
+
+      <ngb-tab>
+
+        <ng-template ngbTabTitle>
+          <span class="number">2</span>
+          <!-- Tab number -->
+          <span class="title">Choose
+            <b>Hall</b>
+          </span>
+          <!-- Tab title -->
+        </ng-template>
+        <ng-template ngbTabContent>
+
+          <div class="room-container room-grid fadeInUp clearfix">
+            <div class="row">
+              <!-- Room Boxes -->
+              <div class="room-box col-lg-6">
+                <div class="img-container">
+                  <div class="check-box-container">
+                    <input type="checkbox" value="1" id="room-1">
+                    <label for="room-1">
+                      <span></span>
+                      Select This
+                      <b>Room</b>
+                    </label>
+                  </div>
+                  <img src="/assets/images/1.jpg" alt="1">
+                  <a href="#" class="btn btn-default">More Details</a>
+                </div>
+                <div class="details">
+                  <div class="title">
+                    <a href="#">Single
+                      <span>Room</span>
+                    </a>
+                  </div>
+                  <div class="desc">
+                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms.
+                  </div>
+                  <div class="price">
+                    <span>$240</span>
+                    - Per Night
+                  </div>
+                </div>
+              </div>
+
+              <!-- Room Boxes -->
+              <div class="room-box col-lg-6">
+                <div class="img-container">
+                  <div class="check-box-container">
+                    <input type="checkbox" value="2" id="room-2">
+                    <label for="room-2">
+                      <span></span>
+                      Select This
+                      <b>Room</b>
+                    </label>
+                  </div>
+                  <img src="/assets/images/2.jpg" alt="2">
+                  <a href="#" class="btn btn-default">More Details</a>
+                </div>
+                <div class="details">
+                  <div class="title">
+                    <a href="#">Double
+                      <span>Room</span>
+                    </a>
+                  </div>
+                  <div class="desc">
+                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms.
+                  </div>
+                  <div class="price">
+                    <span>$350</span>
+                    - Per Night
+                  </div>
+                </div>
+              </div>
+
+              <!-- Room Boxes -->
+              <div class="room-box col-lg-6">
+                <div class="img-container">
+                  <div class="check-box-container">
+                    <input type="checkbox" value="3" id="room-3">
+                    <label for="room-3">
+                      <span></span>
+                      Select This
+                      <b>Room</b>
+                    </label>
+                  </div>
+                  <img src="/assets/images/3.jpg" alt="">
+                  <a href="#" class="btn btn-default">More Details</a>
+                </div>
+                <div class="details">
+                  <div class="title">
+                    <a href="#">Deluxe
+                      <span>One-bedroom</span> Suite</a>
+                  </div>
+                  <div class="desc">
+                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms.
+                  </div>
+                  <div class="price">
+                    <span>$440</span>
+                    - Per Night
+                  </div>
+                </div>
+              </div>
+
+              <!-- Room Boxes -->
+              <div class="room-box col-lg-6">
+                <div class="img-container">
+                  <div class="check-box-container">
+                    <input type="checkbox" value="4" id="room-4">
+                    <label for="room-4">
+                      <span></span>
+                      Select This
+                      <b>Room</b>
+                    </label>
+                  </div>
+                  <img src="/assets/images/4.jpg" alt="">
+                  <a href="#" class="btn btn-default">More Details</a>
+                </div>
+                <div class="details">
+                  <div class="title">
+                    <a href="#">Deluxe
+                      <span>Two-bedroom</span> Suite</a>
+                  </div>
+                  <div class="desc">
+                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms.
+                  </div>
+                  <div class="price">
+                    <span>$480</span>
+                    - Per Night
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </ng-template>
+      </ngb-tab>
+
+      <ngb-tab>
+
+        <ng-template ngbTabTitle>
+
+          <span class="number">3</span>
+          <!-- Tab number -->
+          <span class="title">Reservation
+            <!-- <b>Date</b> -->
+          </span>
+          <!-- Tab title -->
+        </ng-template>
+        <ng-template ngbTabContent>
+
+          <div class="tab-pane fadeInUp clearfix active mb-5" id="booking-reservation">
+            <div class="row">
+              <div class="reservation-summary col-md-4">
+                <h4>Reservation
+                  <b>Summary</b>
+                </h4>
+                <div class="info-boxes">
+                  <div class="title">
+                    <span>Reservation
+                      <b>Info</b>
+                    </span>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="info">Check in :</div>
+                      <div class="value">2015-04-29</div>
+                    </li>
+                    <li>
+                      <div class="info">Check out :</div>
+                      <div class="value">2015-04-30</div>
+                    </li>
+                    <li>
+                      <div class="info">Adult :</div>
+                      <div class="value">1</div>
+                    </li>
+                    <li>
+                      <div class="info">Child :</div>
+                      <div class="value">0</div>
+                    </li>
+                  </ul>
+                  <div class="title">
+                    <span>Room
+                      <b>Info</b>
+                    </span>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="info">Deluxe One-bedroom Suite</div>
+                      <div class="value">$214</div>
+                    </li>
+                  </ul>
+                  <div class="total-cost">
+                    <div class="info">Total Cost :</div>
+                    <div class="value">$1,785</div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="reservation-info col-md-8">
+                <h4>Reservation
+                  <b>Info</b>
+                </h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div>
+                      <div class="field-container">
+                        <input type="text" placeholder="First Name *">
+                        <!-- First Name Field -->
+                      </div>
+                      <div class="field-container">
+                        <input type="text" placeholder="Last Name *">
+                        <!-- Last Name Field -->
+                      </div>
+                      <div class="field-container">
+                        <input type="email" placeholder="Email *">
+                        <!-- Email Field -->
+                      </div>
+                      <div class="field-container">
+                        <input type="text" placeholder="Phone *">
+                        <!-- Phone Field -->
+                      </div>
+                      <div class="field-container">
+                        <input type="text" placeholder="City">
+                        <!-- City Field -->
+                      </div>
+                      <div class="field-container">
+                        <input type="text" placeholder="Address">
+                        <!-- Address Field -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="pl-3">
+                      <div class="field-container message-field">
+                        <textarea id="message-field" placeholder="Special Requirements"></textarea>
+                        <!-- Special Requirements Field -->
+                      </div>
+                      <div class="field-container btn-field">
+                        <input type="submit" class="btn btn-default" value="Submit">
+                        <!-- Payment Button -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Guest Info form -->
+          </div>
+
+
+        </ng-template>
+      </ngb-tab>
+
+      <ngb-tab>
+
+        <ng-template ngbTabTitle>
+          <span class="number">4</span>
+          <!-- Tab number -->
+          <span class="title">Confirmation
+            <!-- <b>Date</b> -->
+          </span>
+          <!-- Tab title -->
+        </ng-template>
+        <ng-template ngbTabContent>
+          <div class="container">
+            <div class="pay-tabs card mx-auto col-lg-8">
+              <h2>Select Payment Method</h2>
+              <ul class="resp-tabs-list">
+                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab">
+                  <span>
+                    <label class="pic1"></label>Credit Card</span>
+                </li>
+                <li class="resp-tab-item" aria-controls="tab_item-1" role="tab">
+                  <span>
+                    <label class="pic3"></label>Net Banking</span>
+                </li>
+                <li class="resp-tab-item" aria-controls="tab_item-2" role="tab">
+                  <span>
+                    <label class="pic4"></label>PayPal</span>
+                </li>
+                <li class="resp-tab-item resp-tab-active" aria-controls="tab_item-3" role="tab">
+                  <span>
+                    <label class="pic2"></label>Debit Card</span>
+                </li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+
+            <div class="resp-tabs-container card mx-auto col-lg-8" style="display: none;">
+              <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0">
+                <span class="resp-arrow"></span>
+
+                Credit Card
+              </h2>
+              <div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+                <div class="payment-info">
+                  <h3>Personal Information</h3>
+                  <form>
+                    <div class="tab-for">
+                      <h5>EMAIL ADDRESS</h5>
+                      <input type="text" value="">
+                      <h5>FIRST NAME</h5>
+                      <input type="text" value="">
+                    </div>
+                  </form>
+                  <h3 class="pay-title">Credit Card Info</h3>
+                  <form>
+                    <div class="tab-for">
+                      <h5>NAME ON CARD</h5>
+                      <input type="text" value="">
+                      <h5>CARD NUMBER</h5>
+                      <input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}"
+                        required="">
+                    </div>
+                    <div class="transaction">
+                      <div class="tab-form-left user-form">
+                        <h5>EXPIRATION</h5>
+                        <ul>
+                          <li>
+                            <input type="number" class="text_box" value="6" min="1">
+                          </li>
+                          <li>
+                            <input type="number" class="text_box" value="1988" min="1">
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="tab-form-right user-form-rt">
+                        <h5>CVV NUMBER</h5>
+                        <input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                  </form>
+                  <div class="single-bottom">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="brand" value="">
+                        <label for="brand">
+                          <span></span>By checking this box, I agree to the Terms &amp; Conditions &amp; Privacy Policy.</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1">
+                <span class="resp-arrow"></span>
+
+                Net Banking
+              </h2>
+              <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                <div class="payment-info">
+                  <h3>Net Banking</h3>
+                  <div class="radio-btns">
+                    <div class="swit">
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio" checked="">
+                            <i></i>Andhra Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Allahabad Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Bank of Baroda</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Canara Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>IDBI Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Icici Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Indian Overseas Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Punjab National Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>South Indian Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>State Bank Of India</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swit">
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio" checked="">
+                            <i></i>City Union Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>HDFC Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>IndusInd Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Syndicate Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Deutsche Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Corporation Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>UCO Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Indian Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>Federal Bank</label>
+                        </div>
+                      </div>
+                      <div class="check_box">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radio">
+                            <i></i>ING Vysya Bank</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <a href="#">Continue</a>
+                </div>
+              </div>
+              <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2">
+                <span class="resp-arrow"></span>
+
+                PayPal
+              </h2>
+              <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                <div class="payment-info">
+                  <h3>PayPal</h3>
+                  <h4>Already Have A PayPal Account?</h4>
+                  <div class="login-tab">
+                    <div class="user-login">
+                      <h2>Login</h2>
+
+                      <form>
+                        <input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}"
+                          required="">
+                        <input type="password" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}"
+                          required="">
+                        <div class="user-grids">
+                          <div class="user-left">
+                            <div class="single-bottom">
+                              <ul>
+                                <li>
+                                  <input type="checkbox" id="brand1" value="">
+                                  <label for="brand1">
+                                    <span></span>Remember me?</label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="user-right">
+                            <input type="submit" value="LOGIN">
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="resp-accordion" role="tab" aria-controls="tab_item-3">
+                <span class="resp-arrow"></span>
+
+                Debit Card
+              </h2>
+              <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+                <div class="payment-info">
+
+                  <h3 class="pay-title">Dedit Card Info</h3>
+                  <form>
+                    <div class="tab-for">
+                      <h5>NAME ON CARD</h5>
+                      <input type="text" value="">
+                      <h5>CARD NUMBER</h5>
+                      <input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}"
+                        required="">
+                    </div>
+                    <div class="transaction">
+                      <div class="tab-form-left user-form">
+                        <h5>EXPIRATION</h5>
+                        <ul>
+                          <li>
+                            <input type="number" class="text_box" value="6" min="1">
+                          </li>
+                          <li>
+                            <input type="number" class="text_box" value="1988" min="1">
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="tab-form-right user-form-rt">
+                        <h5>CVV NUMBER</h5>
+                        <input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                  </form>
+                  <div class="single-bottom">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="brand" value="">
+                        <label for="brand">
+                          <span></span>By checking this box, I agree to the Terms &amp; Conditions &amp; Privacy Policy.</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </ng-template>
+      </ngb-tab>
+
+
+    </ngb-tabset>
+  </section>
+
+</div>
